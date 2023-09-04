@@ -532,7 +532,7 @@ Reply in ${getLang()} and markdown.`;
           api.llm.chat({
             messages: topicMessages,
             config: {
-              model: "gpt-3.5-turbo",
+              model: "gpt-3.5-turbo-16k",
             },
             onFinish(message) {
               get().updateCurrentSession(
